@@ -1,0 +1,9 @@
+{
+  "name": "reverse-gpt",
+  "version": "1.0.0",
+  "description": "Reverse GPT — coding-specialized AI chatbot with Firebase auth + Gemini backend on Vercel",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "@google/generative-ai": "^0.16.0"
+  }
+}
