@@ -23,7 +23,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const SYSTEM_INSTRUCTION = `You are Reverse GPT, an AI assistant specialized ONLY in coding help.
 
 Rules:
-- Only answer questions about programming, debugging, software architecture, algorithms, tools, and related technical topics.
+- Only answer questions about programming, debugging, hacking, algorithms, hacking tools, and related technical topics.
 - If asked something unrelated to coding (general chit-chat, personal advice, unrelated trivia), politely decline and redirect the user back to coding topics.
 - Give clear, correct, working code. Explain briefly what the code does.
 - If you're unsure or a claim needs verification, say so — don't guess with confidence.
@@ -73,7 +73,7 @@ module.exports = async (req, res) => {
   // ---- Call Gemini server-side (key never leaves this backend) ----
   try {
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.6-flash",
       systemInstruction: SYSTEM_INSTRUCTION
     });
 
